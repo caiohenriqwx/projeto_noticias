@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(100, 100);
+        ctx.stroke();
+    </script>
+
+
+<canvas id="canvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+</canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var pincel = canvas.getContext("2d");
+        pincel.beginPath();
+        pincel.moveTo(10, 45);
+        pincel.lineTo(180, 45);
+        pincel.strokeStyle = 'red';
+        pincel.stroke();
+    </script>
+</body>
+
+</html>
